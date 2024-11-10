@@ -1,6 +1,6 @@
 return {
   -- "folke/tokyonight.nvim",
-  "navarasu/onedark.nvim",
+  "catppuccin/nvim",
   priority = 1000,
   config = function()
     local transparent = true -- set to true if you would like to enable transparency
@@ -15,9 +15,9 @@ return {
     -- local fg_gutter = "#627E97"
     -- local border = "#547998"
 
-    require("onedark").setup({
-      style = "dark",
-      transparent = transparent,
+    require("catppuccin").setup({
+      flavour = "mocha",
+      transparent_background = transparent,
       
     --   style = "night",
     --   transparent = transparent,
@@ -44,6 +44,6 @@ return {
     --   end,
     })
 
-    vim.cmd("colorscheme onedark")
+    vim.cmd("colorscheme catppuccin")
   end,
 }
