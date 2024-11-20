@@ -1,6 +1,7 @@
 return {
   -- "folke/tokyonight.nvim",
-  "catppuccin/nvim",
+  -- "catppuccin/nvim",
+  "projekt0n/github-nvim-theme",
   priority = 1000,
   config = function()
     local transparent = true -- set to true if you would like to enable transparency
@@ -15,9 +16,11 @@ return {
     -- local fg_gutter = "#627E97"
     -- local border = "#547998"
 
-    require("catppuccin").setup({
-      flavour = "mocha",
-      transparent_background = transparent,
+    require("github-theme").setup({
+      options = {
+        transparent = transparent
+      }
+      -- flavour = "macchiato",
       
     --   style = "night",
     --   transparent = transparent,
@@ -44,6 +47,6 @@ return {
     --   end,
     })
 
-    vim.cmd("colorscheme catppuccin")
+    vim.cmd("colorscheme github_dark_default")
   end,
 }
