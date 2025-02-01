@@ -12,9 +12,6 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<C-d>", "<C-d>zz", { desc = "move down and centre" })
 keymap.set("n", "<C-u>", "<C-u>zz", { desc = "move up and centre" })
 
--- delete single character without copying into register
-keymap.set("n", "x", "_x")
-
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement

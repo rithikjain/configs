@@ -29,15 +29,15 @@ config.initial_rows = 40
 config.initial_cols = 120
 
 config.window_decorations = "RESIZE"
--- config.window_background_opacity = 0.95
--- config.macos_window_background_blur = 20
+-- config.window_background_opacity = 0.82
+-- config.macos_window_background_blur = 30
 
 config.background = {
   {
     source = {
-      File = wezterm.config_dir .. "/bg/bg14.png",
+      File = wezterm.config_dir .. "/bg/bg1.jpg",
     },
-    hsb = { brightness = 0.015 },
+    hsb = { brightness = 0.02 },
     -- opacity = 1,
   },
   -- {
